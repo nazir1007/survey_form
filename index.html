@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <p>Feel free to answer the questions below based on your own experience and opinion.
+            If you are not comfortable answering a particular question, please skip it by answering 'No'.
+            Every answer would be very appreciated. Thank you for your time.</p>
+        <form class="survey-form">
+            <div class="form-column">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="user@user.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Your Phone Number:</label>
+                    <input type="number" id="number" name="number" placeholder="9999999999" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Where do you live?</label>
+                    <select id="address" name="address">
+                        <option value="select">Select</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Gurgaon">Gurgaon</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Age</legend>
+                        <input type="radio" name="age" value="15-20" />
+                        <label>15-20</label>
+                        <input type="radio" name="age" value="20-30" />
+                        <label>20-30</label>
+                        <input type="radio" name="age" value="31-40" />
+                        <label>31-40</label>
+                        <input type="radio" name="age" value="41-50" />
+                        <label>41-50</label>
+                        <input type="radio" name="age" value="Prefer not to say" />
+                        <label>Prefer not to say</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="form-column">
+                <div class="form-group">
+                    <label>How would you rate your proficiency in coding?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="proficiency" value="Beginner">
+                        <label>Beginner</label>
+                        <input type="radio" name="proficiency" value="Intermediate" required>
+                        <label>Intermediate</label>
+                        <input type="radio" name="proficiency" value="Advanced">
+                        <label>Advanced</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Have you ever appeared in any coding contest?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="contest" value="Yes" required>
+                        <label>Yes</label>
+                        <input type="radio" name="contest" value="No">
+                        <label>No</label>   
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="feedback1">Discuss what drives your passion for coding and outline your appreciations in the field.</label>
+                    <textarea id="feedback1" name="feedback1" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="feedback2">What are some of the challenges you face while coding?</label>
+                    <textarea id="feedback2" name="feedback2" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="feedback3">Please list the data structures you have a strong understanding of.</label>
+                    <textarea id="feedback3" name="feedback3" rows="3" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

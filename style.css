@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    min-height: 100vh; 
+}
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+h1 {
+    color: green;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 48%; 
+    min-width: 300px; 
+    box-sizing: border-box; 
+}
+
+.survey-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+label {
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+legend {
+    padding: 0 10px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group label {
+    margin-bottom: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: rgb(53, 240, 53);
+}
+
+
